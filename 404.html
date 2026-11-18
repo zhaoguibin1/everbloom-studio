@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="That page is not on EverBloom Studio." />
+    <title>Page not found — EverBloom Studio</title>
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #f7f3ec;
+        --bg-soft: #efe8db;
+        --surface: #fffdf8;
+        --ink: #22301f;
+        --ink-soft: #4c5a48;
+        --line: #ddd3bf;
+        --green: #33513a;
+        --clay: #a05c2c;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #141a13;
+          --bg-soft: #1b241a;
+          --surface: #1f2a1e;
+          --ink: #ece7d8;
+          --ink-soft: #b9bfa9;
+          --line: #39442f;
+          --green: #9db98f;
+          --clay: #d99a5b;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Karla", "Segoe UI", system-ui, sans-serif;
+        font-size: 17px;
+        line-height: 1.6;
+      }
+      a { color: var(--green); }
+      .nav {
+        display: flex;
+        align-items: center;
+        padding: 0.65rem clamp(1rem, 4vw, 2.5rem);
+        border-bottom: 1px solid var(--line);
+        background: color-mix(in srgb, var(--bg) 88%, transparent);
+      }
+      .brand { text-decoration: none; color: var(--ink); line-height: 1.1; }
+      .brand .name {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 1.55rem;
+        font-weight: 600;
+      }
+      .brand .name em { color: var(--clay); font-style: normal; }
+      .brand .sub {
+        display: block;
+        font-size: 0.68rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+      }
+      main {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: clamp(3rem, 10vw, 6rem) clamp(1rem, 4vw, 2.5rem);
+      }
+      .mark { width: 4.5rem; height: 4.5rem; margin-bottom: 1.4rem; }
+      h1 {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: clamp(2.4rem, 6vw, 3.4rem);
+        font-weight: 600;
+        line-height: 1.05;
+        margin: 0 0 0.8rem;
+      }
+      p { color: var(--ink-soft); margin: 0 0 1.6rem; }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 3rem;
+        padding: 0.7rem 1.5rem;
+        border-radius: 999px;
+        font-weight: 700;
+        text-decoration: none;
+        border: 1.5px solid var(--green);
+        background: var(--green);
+        color: #f5f1e6;
+      }
+      @media (prefers-color-scheme: dark) {
+        .btn { color: #131a12; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="/">
+        <span class="name">Ever<em>Bloom</em> Studio</span>
+        <span class="sub">Brooklyn · New York</span>
+      </a>
+    </header>
+    <main>
+      <img class="mark" src="/favicon.svg" width="72" height="72" alt="" />
+      <h1>Page not found</h1>
+      <p>That address isn’t part of this site. EverBloom Studio is still on the homepage.</p>
+      <a class="btn" href="/">Back to the homepage</a>
+    </main>
+  </body>
+</html>
