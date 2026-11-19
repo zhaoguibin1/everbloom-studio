@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="920" viewBox="0 0 1000 920">
+  <title>Embroidery hoop with a flowering stem and three skeins of thread</title>
+  <rect width="1000" height="920" fill="#f7f3ec"/>
+  <rect x="36" y="36" width="928" height="848" fill="none" stroke="#ddd3bf" stroke-width="1.5"/>
+
+  <circle cx="500" cy="390" r="288" fill="none" stroke="#6b4b2a" stroke-width="3"/>
+  <circle cx="500" cy="390" r="270" fill="none" stroke="#c9a36a" stroke-width="34"/>
+  <circle cx="500" cy="390" r="252" fill="#fffdf8" stroke="#8a623c" stroke-width="3"/>
+  <circle cx="500" cy="390" r="214" fill="none" stroke="#e4d7c2" stroke-width="1.5" stroke-dasharray="3 8"/>
+
+  <g>
+    <rect x="476" y="86" width="48" height="34" rx="5" fill="#b8895a" stroke="#6b4b2a" stroke-width="2"/>
+    <circle cx="500" cy="103" r="5" fill="#6b4b2a"/>
+    <rect x="490" y="112" width="20" height="7" rx="2" fill="#e6d3b0"/>
+  </g>
+
+  <path d="M508 610 C498 530 460 490 492 410 C518 340 486 300 500 248" fill="none" stroke="#33513a" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M492 430 C560 400 600 360 628 318" fill="none" stroke="#33513a" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M498 540 C440 530 400 560 392 590" fill="none" stroke="#33513a" stroke-width="2.4" stroke-linecap="round"/>
+
+  <path d="M492 470 C430 430 372 458 392 520 C430 534 478 512 492 470Z" fill="#dcead9" stroke="#33513a" stroke-width="2"/>
+  <path d="M490 472 C448 488 414 504 396 518" fill="none" stroke="#33513a" stroke-width="1.4"/>
+  <path d="M500 360 C560 318 624 332 618 392 C574 402 524 388 500 360Z" fill="#e7f2e4" stroke="#33513a" stroke-width="2"/>
+  <path d="M504 362 C548 352 586 360 612 384" fill="none" stroke="#33513a" stroke-width="1.4"/>
+
+  <g transform="translate(500 236)">
+    <path d="M0 -6 C12 -10 16 -36 0 -58 C-16 -36 -12 -10 0 -6Z" fill="#f8ebe3" stroke="#a05c2c" stroke-width="1.8"/>
+    <path d="M0 -6 C12 -10 16 -36 0 -58 C-16 -36 -12 -10 0 -6Z" fill="#f8ebe3" stroke="#a05c2c" stroke-width="1.8" transform="rotate(72)"/>
+    <path d="M0 -6 C12 -10 16 -36 0 -58 C-16 -36 -12 -10 0 -6Z" fill="#f8ebe3" stroke="#a05c2c" stroke-width="1.8" transform="rotate(144)"/>
+    <path d="M0 -6 C12 -10 16 -36 0 -58 C-16 -36 -12 -10 0 -6Z" fill="#f8ebe3" stroke="#a05c2c" stroke-width="1.8" transform="rotate(216)"/>
+    <path d="M0 -6 C12 -10 16 -36 0 -58 C-16 -36 -12 -10 0 -6Z" fill="#f8ebe3" stroke="#a05c2c" stroke-width="1.8" transform="rotate(288)"/>
+    <circle r="11" fill="#a05c2c"/>
+    <circle r="4" fill="#f7f3ec"/>
+  </g>
+
+  <g transform="translate(636 300) scale(0.62)">
+    <path d="M0 -6 C12 -10 16 -36 0 -58 C-16 -36 -12 -10 0 -6Z" fill="#fbf6ee" stroke="#33513a" stroke-width="2"/>
+    <path d="M0 -6 C12 -10 16 -36 0 -58 C-16 -36 -12 -10 0 -6Z" fill="#fbf6ee" stroke="#33513a" stroke-width="2" transform="rotate(72)"/>
+    <path d="M0 -6 C12 -10 16 -36 0 -58 C-16 -36 -12 -10 0 -6Z" fill="#fbf6ee" stroke="#33513a" stroke-width="2" transform="rotate(144)"/>
+    <path d="M0 -6 C12 -10 16 -36 0 -58 C-16 -36 -12 -10 0 -6Z" fill="#fbf6ee" stroke="#33513a" stroke-width="2" transform="rotate(216)"/>
+    <path d="M0 -6 C12 -10 16 -36 0 -58 C-16 -36 -12 -10 0 -6Z" fill="#fbf6ee" stroke="#33513a" stroke-width="2" transform="rotate(288)"/>
+    <circle r="10" fill="#b98a2f"/>
+    <circle r="3.5" fill="#fffdf8"/>
+  </g>
+
+  <path d="M392 586 C380 562 402 546 412 568 C418 586 402 600 392 586Z" fill="#f8ebe3" stroke="#a05c2c" stroke-width="1.8"/>
+  <path d="M386 590 C378 604 392 612 400 600" fill="none" stroke="#33513a" stroke-width="1.6" stroke-linecap="round"/>
+
+  <g fill="#a05c2c">
+    <circle cx="470" cy="250" r="5"/>
+    <circle cx="534" cy="268" r="4.5"/>
+    <circle cx="512" cy="300" r="3.5"/>
+    <circle cx="548" cy="390" r="4"/>
+    <circle cx="456" cy="500" r="4"/>
+    <circle cx="530" cy="560" r="3.5"/>
+  </g>
+  <g fill="#b98a2f">
+    <circle cx="560" cy="248" r="3.5"/>
+    <circle cx="430" cy="430" r="3.5"/>
+    <circle cx="600" cy="360" r="3"/>
+  </g>
+
+  <g>
+    <g transform="translate(356 748) rotate(-7)">
+      <rect width="86" height="118" rx="18" fill="#33513a"/>
+      <rect y="44" width="86" height="30" fill="#243828"/>
+      <circle cx="43" cy="24" r="7" fill="#f7f3ec"/>
+      <circle cx="43" cy="94" r="7" fill="#f7f3ec"/>
+    </g>
+    <g transform="translate(462 742)">
+      <rect width="86" height="118" rx="18" fill="#a05c2c"/>
+      <rect y="44" width="86" height="30" fill="#7d4520"/>
+      <circle cx="43" cy="24" r="7" fill="#f7f3ec"/>
+      <circle cx="43" cy="94" r="7" fill="#f7f3ec"/>
+    </g>
+    <g transform="translate(568 750) rotate(6)">
+      <rect width="86" height="118" rx="18" fill="#b98a2f"/>
+      <rect y="44" width="86" height="30" fill="#8d6a22"/>
+      <circle cx="43" cy="24" r="7" fill="#f7f3ec"/>
+      <circle cx="43" cy="94" r="7" fill="#f7f3ec"/>
+    </g>
+  </g>
+</svg>
