@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260">
+  <title>A French knot on fabric, with the thread wrapped at the needle</title>
+  <rect width="400" height="260" fill="#fffdf8"/>
+  <path d="M28 176 H372" fill="none" stroke="#e4d7c2" stroke-width="3"/>
+  <g transform="translate(214 148) rotate(-58)">
+    <rect x="-5" y="-78" width="10" height="132" rx="5" fill="#e1e4e6" stroke="#8b9196" stroke-width="1.5"/>
+    <circle cy="-64" r="2.2" fill="#4c5a48"/>
+  </g>
+  <path d="M168 176 C168 120 214 112 214 150" fill="none" stroke="#a05c2c" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="214" cy="156" r="16" fill="none" stroke="#a05c2c" stroke-width="4"/>
+  <circle cx="214" cy="156" r="5.5" fill="#a05c2c"/>
+  <path d="M214 172 C230 196 268 188 276 168" fill="none" stroke="#a05c2c" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
