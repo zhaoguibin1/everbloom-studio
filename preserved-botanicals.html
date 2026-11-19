@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="EverBloom Studio — the full preserved botanicals collection: boxwood wreaths, arrangements and small pieces from our partner workshop in Liaoning, China." />
+    <link rel="canonical" href="https://everbloomstudio.us/preserved-botanicals.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="EverBloom Studio" />
+    <meta property="og:title" content="Preserved Botanicals — Full Collection | EverBloom Studio" />
+    <meta property="og:description" content="Boxwood wreaths, arrangements and small pieces, made from real preserved botanicals. Photos from our partner workshop's catalogs." />
+    <meta property="og:url" content="https://everbloomstudio.us/preserved-botanicals.html" />
+    <meta property="og:image" content="https://everbloomstudio.us/assets/wreath.jpg" />
+    <link rel="icon" href="data:," />
+    <title>Preserved Botanicals — Full Collection | EverBloom Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+      :root {
+        --bg: #f7f3ec;
+        --bg-soft: #efe8db;
+        --surface: #fffdf8;
+        --ink: #22301f;
+        --ink-soft: #4c5a48;
+        --line: #ddd3bf;
+        --green: #33513a;
+        --green-deep: #22392a;
+        --clay: #a05c2c;
+        --clay-soft: #f0e2d2;
+        --gold: #b98a2f;
+        --shadow: 0 18px 40px rgba(34, 48, 31, 0.14);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #141a13;
+          --bg-soft: #1b241a;
+          --surface: #1f2a1e;
+          --ink: #ece7d8;
+          --ink-soft: #b9bfa9;
+          --line: #39442f;
+          --green: #9db98f;
+          --green-deep: #0f1710;
+          --clay: #d99a5b;
+          --clay-soft: #33302a;
+          --gold: #d3ab55;
+          --shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+        }
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Karla", "Segoe UI", system-ui, sans-serif;
+        font-size: 17px;
+        line-height: 1.6;
+      }
+      img { display: block; max-width: 100%; }
+      a { color: var(--green); }
+      button, [role="button"], select, summary, input:not([type="checkbox"], [type="radio"]) { min-height: 2.25rem; }
+
+      .serif { font-family: "Cormorant Garamond", Georgia, serif; }
+
+      /* ---------- Nav ---------- */
+      .nav {
+        position: sticky; top: 0; z-index: 20;
+        display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+        padding: 0.65rem clamp(1rem, 4vw, 2.5rem);
+        background: color-mix(in srgb, var(--bg) 88%, transparent);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--line);
+      }
+      .brand { text-decoration: none; color: var(--ink); line-height: 1.1; }
+      .brand .name { font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.55rem; font-weight: 600; letter-spacing: 0.01em; }
+      .brand .name em { color: var(--clay); font-style: normal; }
+      .brand .sub { display: block; font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-soft); }
+      .nav-links { display: flex; gap: 0.25rem; flex-wrap: wrap; }
+      .nav-links a {
+        text-decoration: none; color: var(--ink); font-weight: 600; font-size: 0.95rem;
+        padding: 0.55rem 0.8rem; border-radius: 999px; min-height: 2.25rem;
+        display: inline-flex; align-items: center;
+      }
+      .nav-links a:hover { background: var(--bg-soft); }
+
+      /* ---------- Hero ---------- */
+      .hero {
+        display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(1.5rem, 4vw, 3.5rem);
+        align-items: center;
+        padding: clamp(2rem, 6vw, 4.5rem) clamp(1rem, 4vw, 2.5rem) clamp(2.5rem, 6vw, 4rem);
+        max-width: 1240px; margin: 0 auto;
+      }
+      .hero h1 {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: clamp(2.6rem, 6vw, 4.3rem); font-weight: 600; line-height: 1.04; margin: 0 0 1.1rem;
+      }
+      .hero h1 .accent { color: var(--clay); font-style: italic; }
+      .hero p.lede { font-size: 1.13rem; color: var(--ink-soft); margin: 0 0 1.8rem; max-width: 34rem; }
+      .cta-row { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+      .btn {
+        display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+        min-height: 3rem; padding: 0.7rem 1.5rem; border-radius: 999px;
+        font-weight: 700; font-size: 1rem; text-decoration: none; border: 1.5px solid var(--green);
+        cursor: pointer; transition: transform 0.15s ease, background 0.15s ease;
+      }
+      .btn-solid { background: var(--green); color: #f5f1e6; }
+      @media (prefers-color-scheme: dark) { .btn-solid { color: #131a12; } }
+      .btn-solid:hover { transform: translateY(-2px); }
+      .btn-ghost { background: transparent; color: var(--green); }
+      .btn-ghost:hover { background: var(--bg-soft); }
+      .hero-meta { margin-top: 1.6rem; font-size: 0.92rem; color: var(--ink-soft); display: flex; gap: 1.2rem; flex-wrap: wrap; }
+      .hero-meta span::before { content: "— "; color: var(--clay); }
+      .hero-photo { position: relative; }
+      .hero-photo img {
+        width: 100%; aspect-ratio: 1 / 1.04; object-fit: cover;
+        border-radius: 190px 190px 18px 18px; box-shadow: var(--shadow);
+      }
+      .hero-photo figcaption {
+        position: absolute; left: 1rem; bottom: 1rem;
+        background: color-mix(in srgb, var(--surface) 92%, transparent);
+        border: 1px solid var(--line); border-radius: 12px;
+        padding: 0.55rem 0.9rem; font-size: 0.88rem; color: var(--ink);
+      }
+      .hero-photo figcaption strong { color: var(--clay); }
+
+      /* ---------- Sections ---------- */
+      section { max-width: 1240px; margin: 0 auto; padding: clamp(2.2rem, 6vw, 4rem) clamp(1rem, 4vw, 2.5rem); }
+      section[id], .panel[id], main[id] { scroll-margin-top: 92px; }
+      .sec-head { max-width: 44rem; margin-bottom: 2rem; }
+      .sec-head h2 { font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 600; line-height: 1.1; margin: 0 0 0.6rem; }
+      .sec-head p { color: var(--ink-soft); margin: 0; }
+      .rule { width: 64px; height: 3px; background: var(--clay); border-radius: 2px; margin-bottom: 1.1rem; }
+
+      /* ---------- Collections ---------- */
+      .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
+      @media (max-width: 1080px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+      .card {
+        background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+        overflow: hidden; display: flex; flex-direction: column;
+      }
+      .card img { width: 100%; aspect-ratio: 1 / 0.92; object-fit: cover; }
+      .card-body { padding: 1.3rem 1.4rem 1.5rem; display: flex; flex-direction: column; gap: 0.55rem; flex: 1; }
+      .card h3 { font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.65rem; font-weight: 600; margin: 0; line-height: 1.15; }
+      .card .zh { color: var(--clay); font-weight: 700; font-size: 0.9rem; letter-spacing: 0.06em; }
+      .card p { margin: 0; color: var(--ink-soft); font-size: 0.98rem; }
+      .tag {
+        margin-top: auto; align-self: flex-start;
+        background: var(--clay-soft); color: var(--clay);
+        font-size: 0.82rem; font-weight: 700; padding: 0.3rem 0.75rem; border-radius: 999px;
+      }
+      .tag.green { background: var(--bg-soft); color: var(--green); }
+
+      /* ---------- Story ---------- */
+      .story-wrap { background: var(--bg-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+      .story { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
+      .story-photos { display: grid; grid-template-columns: 1.25fr 1fr; gap: 1rem; align-items: end; }
+      .story-photos img { border-radius: 16px; box-shadow: var(--shadow); width: 100%; object-fit: cover; }
+      .story-photos .tall { aspect-ratio: 3 / 4; }
+      .story-photos .small { aspect-ratio: 3 / 3.6; }
+      .story h2 { font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 600; line-height: 1.1; margin: 0 0 1rem; }
+      .story p { color: var(--ink-soft); margin: 0 0 1rem; }
+      .story p strong { color: var(--ink); }
+      .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.6rem; }
+      .fact { border-top: 2px solid var(--clay); padding-top: 0.6rem; }
+      .fact .num { font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.9rem; font-weight: 600; color: var(--green); line-height: 1; }
+      .fact .lbl { font-size: 0.85rem; color: var(--ink-soft); }
+
+      /* ---------- Wholesale / contact ---------- */
+      .split { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+      .panel { border-radius: 18px; padding: clamp(1.5rem, 3.5vw, 2.4rem); }
+      .panel-dark { background: var(--green-deep); color: #ece7d8; }
+      .panel-dark h2 { font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 600; margin: 0 0 0.8rem; line-height: 1.12; }
+      .panel-dark p { color: #c9cfba; margin: 0 0 1.4rem; }
+      .panel-dark ul { margin: 0 0 1.6rem; padding-left: 1.15rem; color: #e4e0cf; }
+      .panel-dark li { margin-bottom: 0.4rem; }
+      .panel-light { background: var(--surface); border: 1px solid var(--line); }
+      .panel-light h2 { font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 600; margin: 0 0 0.8rem; line-height: 1.12; }
+      .panel-light p { color: var(--ink-soft); margin: 0 0 1.2rem; }
+      .btn-clay { background: var(--clay); border-color: var(--clay); color: #fff8ef; }
+      .btn-clay:hover { transform: translateY(-2px); }
+      .mail-row { display: flex; gap: 0.7rem; flex-wrap: wrap; align-items: center; }
+      .mail-addr {
+        font-weight: 700; font-size: 1.08rem; color: var(--green); text-decoration: none;
+        border-bottom: 2px solid var(--clay); padding-bottom: 1px;
+      }
+      .copy-btn {
+        border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+        border-radius: 999px; padding: 0.5rem 1.1rem; font-weight: 700; font-size: 0.92rem; cursor: pointer;
+        min-height: 2.5rem;
+      }
+      .copy-btn:hover { background: var(--bg-soft); }
+      .copy-note { font-size: 0.88rem; color: var(--ink-soft); min-height: 1.4em; }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 2rem clamp(1rem, 4vw, 2.5rem) 2.6rem;
+        max-width: 1240px; margin: 0 auto;
+        display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+        color: var(--ink-soft); font-size: 0.92rem;
+      }
+      footer .fname { font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.3rem; color: var(--ink); font-weight: 600; }
+
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        .btn:hover { transform: none; }
+      }
+      .photo-note { margin-top: 1.2rem; font-size: 0.86rem; color: var(--ink-soft); }
+
+      @media (max-width: 860px) {
+        .nav { padding: 0.5rem 1rem; gap: 0.4rem 0.75rem; }
+        .brand .name { font-size: 1.32rem; white-space: nowrap; }
+        .brand .sub { font-size: 0.6rem; letter-spacing: 0.18em; white-space: nowrap; margin-top: 0.15rem; }
+        .nav-links { gap: 0.1rem; }
+        section[id], .panel[id], main[id] { scroll-margin-top: 76px; }
+        .hero { grid-template-columns: 1fr; padding-top: 1.6rem; }
+        .hero-photo img { aspect-ratio: 4 / 3.4; border-radius: 120px 120px 16px 16px; }
+        .cards { grid-template-columns: 1fr; }
+        .story { grid-template-columns: 1fr; }
+        .split { grid-template-columns: 1fr; }
+        .facts { grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+        .nav-links a { padding: 0.45rem 0.5rem; font-size: 0.88rem; }
+      }
+    
+      .gal-hero { max-width: 1100px; margin: 0 auto; padding: 2.2rem 1.4rem 0.5rem; }
+      .gal-hero h1 { font-family: "Cormorant Garamond", serif; font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.1; margin: 0.6rem 0 0.8rem; }
+      .gal-hero p { color: var(--ink-soft); max-width: 62ch; }
+      .back { font-weight: 700; color: var(--green); text-decoration: none; }
+      .gal-sec { max-width: 1100px; margin: 0 auto; padding: 1.6rem 1.4rem 0.4rem; }
+      .gal-sec h2 { font-family: "Cormorant Garamond", serif; font-size: 1.7rem; margin: 0 0 0.3rem; }
+      .gal-sec .count { color: var(--ink-soft); margin: 0 0 1.1rem; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 1rem; }
+      .grid figure { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); }
+      .grid a { display: block; }
+      .grid img { width: 100%; height: 210px; object-fit: cover; object-position: top center; display: block; background: #fff; }
+      .grid figcaption { padding: 0.55rem 0.8rem; font-size: 0.85rem; color: var(--ink-soft); }
+      .gal-cta { max-width: 1100px; margin: 0 auto; padding: 2rem 1.4rem 3rem; }
+    </style>
+  </head>
+  <body id="top">
+    <header class="nav">
+      <a class="brand" href="index.html">
+        <span class="name">Ever<em>Bloom</em> Studio</span>
+        <span class="sub">Brooklyn · New York</span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="index.html#collections">Collections</a>
+        <a href="index.html#story">Our Story</a>
+        <a href="index.html#wholesale">Wholesale</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="gal-hero">
+        <a class="back" href="index.html">&larr; Back to home</a>
+        <h1>Preserved Botanicals — the full collection</h1>
+        <p>
+          Every piece below is made from real preserved boxwood, hydrangea and seasonal
+          botanicals by our partner workshop in Lingyuan, China — the same workshop that has
+          supplied U.S. national retail chains since 2025. Photos are from the workshop&rsquo;s
+          own catalogs. Item numbers and sizes are printed on each page; click any image to
+          see it full-size.
+        </p>
+        <p>
+          Prices, minimums and samples on request — wholesale inquiries are open.
+          Write to <a href="mailto:info@everbloomstudio.us">info@everbloomstudio.us</a>
+          with the item numbers you like.
+        </p>
+      </div>
+      <section class="gal-sec" id="2026">
+        <h2>2026 Collection</h2>
+        <p class="count">99 pages · Two pieces per page, Item No. SS001 and up, sizes printed on each page.</p>
+        <div class="grid">
+          <figure><a href="gallery/2026/p01.jpg"><img src="gallery/2026/p01.jpg" alt="2026 Collection, page 1" loading="lazy" /></a><figcaption>Page 1</figcaption></figure>
+          <figure><a href="gallery/2026/p02.jpg"><img src="gallery/2026/p02.jpg" alt="2026 Collection, page 2" loading="lazy" /></a><figcaption>Page 2</figcaption></figure>
+          <figure><a href="gallery/2026/p03.jpg"><img src="gallery/2026/p03.jpg" alt="2026 Collection, page 3" loading="lazy" /></a><figcaption>Page 3</figcaption></figure>
+          <figure><a href="gallery/2026/p04.jpg"><img src="gallery/2026/p04.jpg" alt="2026 Collection, page 4" loading="lazy" /></a><figcaption>Page 4</figcaption></figure>
+          <figure><a href="gallery/2026/p05.jpg"><img src="gallery/2026/p05.jpg" alt="2026 Collection, page 5" loading="lazy" /></a><figcaption>Page 5</figcaption></figure>
+          <figure><a href="gallery/2026/p06.jpg"><img src="gallery/2026/p06.jpg" alt="2026 Collection, page 6" loading="lazy" /></a><figcaption>Page 6</figcaption></figure>
+          <figure><a href="gallery/2026/p07.jpg"><img src="gallery/2026/p07.jpg" alt="2026 Collection, page 7" loading="lazy" /></a><figcaption>Page 7</figcaption></figure>
+          <figure><a href="gallery/2026/p08.jpg"><img src="gallery/2026/p08.jpg" alt="2026 Collection, page 8" loading="lazy" /></a><figcaption>Page 8</figcaption></figure>
+          <figure><a href="gallery/2026/p09.jpg"><img src="gallery/2026/p09.jpg" alt="2026 Collection, page 9" loading="lazy" /></a><figcaption>Page 9</figcaption></figure>
+          <figure><a href="gallery/2026/p10.jpg"><img src="gallery/2026/p10.jpg" alt="2026 Collection, page 10" loading="lazy" /></a><figcaption>Page 10</figcaption></figure>
+          <figure><a href="gallery/2026/p11.jpg"><img src="gallery/2026/p11.jpg" alt="2026 Collection, page 11" loading="lazy" /></a><figcaption>Page 11</figcaption></figure>
+          <figure><a href="gallery/2026/p12.jpg"><img src="gallery/2026/p12.jpg" alt="2026 Collection, page 12" loading="lazy" /></a><figcaption>Page 12</figcaption></figure>
+          <figure><a href="gallery/2026/p13.jpg"><img src="gallery/2026/p13.jpg" alt="2026 Collection, page 13" loading="lazy" /></a><figcaption>Page 13</figcaption></figure>
+          <figure><a href="gallery/2026/p14.jpg"><img src="gallery/2026/p14.jpg" alt="2026 Collection, page 14" loading="lazy" /></a><figcaption>Page 14</figcaption></figure>
+          <figure><a href="gallery/2026/p15.jpg"><img src="gallery/2026/p15.jpg" alt="2026 Collection, page 15" loading="lazy" /></a><figcaption>Page 15</figcaption></figure>
+          <figure><a href="gallery/2026/p16.jpg"><img src="gallery/2026/p16.jpg" alt="2026 Collection, page 16" loading="lazy" /></a><figcaption>Page 16</figcaption></figure>
+          <figure><a href="gallery/2026/p17.jpg"><img src="gallery/2026/p17.jpg" alt="2026 Collection, page 17" loading="lazy" /></a><figcaption>Page 17</figcaption></figure>
+          <figure><a href="gallery/2026/p18.jpg"><img src="gallery/2026/p18.jpg" alt="2026 Collection, page 18" loading="lazy" /></a><figcaption>Page 18</figcaption></figure>
+          <figure><a href="gallery/2026/p19.jpg"><img src="gallery/2026/p19.jpg" alt="2026 Collection, page 19" loading="lazy" /></a><figcaption>Page 19</figcaption></figure>
+          <figure><a href="gallery/2026/p20.jpg"><img src="gallery/2026/p20.jpg" alt="2026 Collection, page 20" loading="lazy" /></a><figcaption>Page 20</figcaption></figure>
+          <figure><a href="gallery/2026/p21.jpg"><img src="gallery/2026/p21.jpg" alt="2026 Collection, page 21" loading="lazy" /></a><figcaption>Page 21</figcaption></figure>
+          <figure><a href="gallery/2026/p22.jpg"><img src="gallery/2026/p22.jpg" alt="2026 Collection, page 22" loading="lazy" /></a><figcaption>Page 22</figcaption></figure>
+          <figure><a href="gallery/2026/p23.jpg"><img src="gallery/2026/p23.jpg" alt="2026 Collection, page 23" loading="lazy" /></a><figcaption>Page 23</figcaption></figure>
+          <figure><a href="gallery/2026/p24.jpg"><img src="gallery/2026/p24.jpg" alt="2026 Collection, page 24" loading="lazy" /></a><figcaption>Page 24</figcaption></figure>
+          <figure><a href="gallery/2026/p25.jpg"><img src="gallery/2026/p25.jpg" alt="2026 Collection, page 25" loading="lazy" /></a><figcaption>Page 25</figcaption></figure>
+          <figure><a href="gallery/2026/p26.jpg"><img src="gallery/2026/p26.jpg" alt="2026 Collection, page 26" loading="lazy" /></a><figcaption>Page 26</figcaption></figure>
+          <figure><a href="gallery/2026/p27.jpg"><img src="gallery/2026/p27.jpg" alt="2026 Collection, page 27" loading="lazy" /></a><figcaption>Page 27</figcaption></figure>
+          <figure><a href="gallery/2026/p28.jpg"><img src="gallery/2026/p28.jpg" alt="2026 Collection, page 28" loading="lazy" /></a><figcaption>Page 28</figcaption></figure>
+          <figure><a href="gallery/2026/p29.jpg"><img src="gallery/2026/p29.jpg" alt="2026 Collection, page 29" loading="lazy" /></a><figcaption>Page 29</figcaption></figure>
+          <figure><a href="gallery/2026/p30.jpg"><img src="gallery/2026/p30.jpg" alt="2026 Collection, page 30" loading="lazy" /></a><figcaption>Page 30</figcaption></figure>
+          <figure><a href="gallery/2026/p31.jpg"><img src="gallery/2026/p31.jpg" alt="2026 Collection, page 31" loading="lazy" /></a><figcaption>Page 31</figcaption></figure>
+          <figure><a href="gallery/2026/p32.jpg"><img src="gallery/2026/p32.jpg" alt="2026 Collection, page 32" loading="lazy" /></a><figcaption>Page 32</figcaption></figure>
+          <figure><a href="gallery/2026/p33.jpg"><img src="gallery/2026/p33.jpg" alt="2026 Collection, page 33" loading="lazy" /></a><figcaption>Page 33</figcaption></figure>
+          <figure><a href="gallery/2026/p34.jpg"><img src="gallery/2026/p34.jpg" alt="2026 Collection, page 34" loading="lazy" /></a><figcaption>Page 34</figcaption></figure>
+          <figure><a href="gallery/2026/p35.jpg"><img src="gallery/2026/p35.jpg" alt="2026 Collection, page 35" loading="lazy" /></a><figcaption>Page 35</figcaption></figure>
+          <figure><a href="gallery/2026/p36.jpg"><img src="gallery/2026/p36.jpg" alt="2026 Collection, page 36" loading="lazy" /></a><figcaption>Page 36</figcaption></figure>
+          <figure><a href="gallery/2026/p37.jpg"><img src="gallery/2026/p37.jpg" alt="2026 Collection, page 37" loading="lazy" /></a><figcaption>Page 37</figcaption></figure>
+          <figure><a href="gallery/2026/p38.jpg"><img src="gallery/2026/p38.jpg" alt="2026 Collection, page 38" loading="lazy" /></a><figcaption>Page 38</figcaption></figure>
+          <figure><a href="gallery/2026/p39.jpg"><img src="gallery/2026/p39.jpg" alt="2026 Collection, page 39" loading="lazy" /></a><figcaption>Page 39</figcaption></figure>
+          <figure><a href="gallery/2026/p40.jpg"><img src="gallery/2026/p40.jpg" alt="2026 Collection, page 40" loading="lazy" /></a><figcaption>Page 40</figcaption></figure>
+          <figure><a href="gallery/2026/p41.jpg"><img src="gallery/2026/p41.jpg" alt="2026 Collection, page 41" loading="lazy" /></a><figcaption>Page 41</figcaption></figure>
+          <figure><a href="gallery/2026/p42.jpg"><img src="gallery/2026/p42.jpg" alt="2026 Collection, page 42" loading="lazy" /></a><figcaption>Page 42</figcaption></figure>
+          <figure><a href="gallery/2026/p43.jpg"><img src="gallery/2026/p43.jpg" alt="2026 Collection, page 43" loading="lazy" /></a><figcaption>Page 43</figcaption></figure>
+          <figure><a href="gallery/2026/p44.jpg"><img src="gallery/2026/p44.jpg" alt="2026 Collection, page 44" loading="lazy" /></a><figcaption>Page 44</figcaption></figure>
+          <figure><a href="gallery/2026/p45.jpg"><img src="gallery/2026/p45.jpg" alt="2026 Collection, page 45" loading="lazy" /></a><figcaption>Page 45</figcaption></figure>
+          <figure><a href="gallery/2026/p46.jpg"><img src="gallery/2026/p46.jpg" alt="2026 Collection, page 46" loading="lazy" /></a><figcaption>Page 46</figcaption></figure>
+          <figure><a href="gallery/2026/p47.jpg"><img src="gallery/2026/p47.jpg" alt="2026 Collection, page 47" loading="lazy" /></a><figcaption>Page 47</figcaption></figure>
+          <figure><a href="gallery/2026/p48.jpg"><img src="gallery/2026/p48.jpg" alt="2026 Collection, page 48" loading="lazy" /></a><figcaption>Page 48</figcaption></figure>
+          <figure><a href="gallery/2026/p49.jpg"><img src="gallery/2026/p49.jpg" alt="2026 Collection, page 49" loading="lazy" /></a><figcaption>Page 49</figcaption></figure>
+          <figure><a href="gallery/2026/p50.jpg"><img src="gallery/2026/p50.jpg" alt="2026 Collection, page 50" loading="lazy" /></a><figcaption>Page 50</figcaption></figure>
+          <figure><a href="gallery/2026/p51.jpg"><img src="gallery/2026/p51.jpg" alt="2026 Collection, page 51" loading="lazy" /></a><figcaption>Page 51</figcaption></figure>
+          <figure><a href="gallery/2026/p52.jpg"><img src="gallery/2026/p52.jpg" alt="2026 Collection, page 52" loading="lazy" /></a><figcaption>Page 52</figcaption></figure>
+          <figure><a href="gallery/2026/p53.jpg"><img src="gallery/2026/p53.jpg" alt="2026 Collection, page 53" loading="lazy" /></a><figcaption>Page 53</figcaption></figure>
+          <figure><a href="gallery/2026/p54.jpg"><img src="gallery/2026/p54.jpg" alt="2026 Collection, page 54" loading="lazy" /></a><figcaption>Page 54</figcaption></figure>
+          <figure><a href="gallery/2026/p55.jpg"><img src="gallery/2026/p55.jpg" alt="2026 Collection, page 55" loading="lazy" /></a><figcaption>Page 55</figcaption></figure>
+          <figure><a href="gallery/2026/p56.jpg"><img src="gallery/2026/p56.jpg" alt="2026 Collection, page 56" loading="lazy" /></a><figcaption>Page 56</figcaption></figure>
+          <figure><a href="gallery/2026/p57.jpg"><img src="gallery/2026/p57.jpg" alt="2026 Collection, page 57" loading="lazy" /></a><figcaption>Page 57</figcaption></figure>
+          <figure><a href="gallery/2026/p58.jpg"><img src="gallery/2026/p58.jpg" alt="2026 Collection, page 58" loading="lazy" /></a><figcaption>Page 58</figcaption></figure>
+          <figure><a href="gallery/2026/p59.jpg"><img src="gallery/2026/p59.jpg" alt="2026 Collection, page 59" loading="lazy" /></a><figcaption>Page 59</figcaption></figure>
+          <figure><a href="gallery/2026/p60.jpg"><img src="gallery/2026/p60.jpg" alt="2026 Collection, page 60" loading="lazy" /></a><figcaption>Page 60</figcaption></figure>
+          <figure><a href="gallery/2026/p61.jpg"><img src="gallery/2026/p61.jpg" alt="2026 Collection, page 61" loading="lazy" /></a><figcaption>Page 61</figcaption></figure>
+          <figure><a href="gallery/2026/p62.jpg"><img src="gallery/2026/p62.jpg" alt="2026 Collection, page 62" loading="lazy" /></a><figcaption>Page 62</figcaption></figure>
+          <figure><a href="gallery/2026/p63.jpg"><img src="gallery/2026/p63.jpg" alt="2026 Collection, page 63" loading="lazy" /></a><figcaption>Page 63</figcaption></figure>
+          <figure><a href="gallery/2026/p64.jpg"><img src="gallery/2026/p64.jpg" alt="2026 Collection, page 64" loading="lazy" /></a><figcaption>Page 64</figcaption></figure>
+          <figure><a href="gallery/2026/p65.jpg"><img src="gallery/2026/p65.jpg" alt="2026 Collection, page 65" loading="lazy" /></a><figcaption>Page 65</figcaption></figure>
+          <figure><a href="gallery/2026/p66.jpg"><img src="gallery/2026/p66.jpg" alt="2026 Collection, page 66" loading="lazy" /></a><figcaption>Page 66</figcaption></figure>
+          <figure><a href="gallery/2026/p67.jpg"><img src="gallery/2026/p67.jpg" alt="2026 Collection, page 67" loading="lazy" /></a><figcaption>Page 67</figcaption></figure>
+          <figure><a href="gallery/2026/p68.jpg"><img src="gallery/2026/p68.jpg" alt="2026 Collection, page 68" loading="lazy" /></a><figcaption>Page 68</figcaption></figure>
+          <figure><a href="gallery/2026/p69.jpg"><img src="gallery/2026/p69.jpg" alt="2026 Collection, page 69" loading="lazy" /></a><figcaption>Page 69</figcaption></figure>
+          <figure><a href="gallery/2026/p70.jpg"><img src="gallery/2026/p70.jpg" alt="2026 Collection, page 70" loading="lazy" /></a><figcaption>Page 70</figcaption></figure>
+          <figure><a href="gallery/2026/p71.jpg"><img src="gallery/2026/p71.jpg" alt="2026 Collection, page 71" loading="lazy" /></a><figcaption>Page 71</figcaption></figure>
+          <figure><a href="gallery/2026/p72.jpg"><img src="gallery/2026/p72.jpg" alt="2026 Collection, page 72" loading="lazy" /></a><figcaption>Page 72</figcaption></figure>
+          <figure><a href="gallery/2026/p73.jpg"><img src="gallery/2026/p73.jpg" alt="2026 Collection, page 73" loading="lazy" /></a><figcaption>Page 73</figcaption></figure>
+          <figure><a href="gallery/2026/p74.jpg"><img src="gallery/2026/p74.jpg" alt="2026 Collection, page 74" loading="lazy" /></a><figcaption>Page 74</figcaption></figure>
+          <figure><a href="gallery/2026/p75.jpg"><img src="gallery/2026/p75.jpg" alt="2026 Collection, page 75" loading="lazy" /></a><figcaption>Page 75</figcaption></figure>
+          <figure><a href="gallery/2026/p76.jpg"><img src="gallery/2026/p76.jpg" alt="2026 Collection, page 76" loading="lazy" /></a><figcaption>Page 76</figcaption></figure>
+          <figure><a href="gallery/2026/p77.jpg"><img src="gallery/2026/p77.jpg" alt="2026 Collection, page 77" loading="lazy" /></a><figcaption>Page 77</figcaption></figure>
+          <figure><a href="gallery/2026/p78.jpg"><img src="gallery/2026/p78.jpg" alt="2026 Collection, page 78" loading="lazy" /></a><figcaption>Page 78</figcaption></figure>
+          <figure><a href="gallery/2026/p79.jpg"><img src="gallery/2026/p79.jpg" alt="2026 Collection, page 79" loading="lazy" /></a><figcaption>Page 79</figcaption></figure>
+          <figure><a href="gallery/2026/p80.jpg"><img src="gallery/2026/p80.jpg" alt="2026 Collection, page 80" loading="lazy" /></a><figcaption>Page 80</figcaption></figure>
+          <figure><a href="gallery/2026/p81.jpg"><img src="gallery/2026/p81.jpg" alt="2026 Collection, page 81" loading="lazy" /></a><figcaption>Page 81</figcaption></figure>
+          <figure><a href="gallery/2026/p82.jpg"><img src="gallery/2026/p82.jpg" alt="2026 Collection, page 82" loading="lazy" /></a><figcaption>Page 82</figcaption></figure>
+          <figure><a href="gallery/2026/p83.jpg"><img src="gallery/2026/p83.jpg" alt="2026 Collection, page 83" loading="lazy" /></a><figcaption>Page 83</figcaption></figure>
+          <figure><a href="gallery/2026/p84.jpg"><img src="gallery/2026/p84.jpg" alt="2026 Collection, page 84" loading="lazy" /></a><figcaption>Page 84</figcaption></figure>
+          <figure><a href="gallery/2026/p85.jpg"><img src="gallery/2026/p85.jpg" alt="2026 Collection, page 85" loading="lazy" /></a><figcaption>Page 85</figcaption></figure>
+          <figure><a href="gallery/2026/p86.jpg"><img src="gallery/2026/p86.jpg" alt="2026 Collection, page 86" loading="lazy" /></a><figcaption>Page 86</figcaption></figure>
+          <figure><a href="gallery/2026/p87.jpg"><img src="gallery/2026/p87.jpg" alt="2026 Collection, page 87" loading="lazy" /></a><figcaption>Page 87</figcaption></figure>
+          <figure><a href="gallery/2026/p88.jpg"><img src="gallery/2026/p88.jpg" alt="2026 Collection, page 88" loading="lazy" /></a><figcaption>Page 88</figcaption></figure>
+          <figure><a href="gallery/2026/p89.jpg"><img src="gallery/2026/p89.jpg" alt="2026 Collection, page 89" loading="lazy" /></a><figcaption>Page 89</figcaption></figure>
+          <figure><a href="gallery/2026/p90.jpg"><img src="gallery/2026/p90.jpg" alt="2026 Collection, page 90" loading="lazy" /></a><figcaption>Page 90</figcaption></figure>
+          <figure><a href="gallery/2026/p91.jpg"><img src="gallery/2026/p91.jpg" alt="2026 Collection, page 91" loading="lazy" /></a><figcaption>Page 91</figcaption></figure>
+          <figure><a href="gallery/2026/p92.jpg"><img src="gallery/2026/p92.jpg" alt="2026 Collection, page 92" loading="lazy" /></a><figcaption>Page 92</figcaption></figure>
+          <figure><a href="gallery/2026/p93.jpg"><img src="gallery/2026/p93.jpg" alt="2026 Collection, page 93" loading="lazy" /></a><figcaption>Page 93</figcaption></figure>
+          <figure><a href="gallery/2026/p94.jpg"><img src="gallery/2026/p94.jpg" alt="2026 Collection, page 94" loading="lazy" /></a><figcaption>Page 94</figcaption></figure>
+          <figure><a href="gallery/2026/p95.jpg"><img src="gallery/2026/p95.jpg" alt="2026 Collection, page 95" loading="lazy" /></a><figcaption>Page 95</figcaption></figure>
+          <figure><a href="gallery/2026/p96.jpg"><img src="gallery/2026/p96.jpg" alt="2026 Collection, page 96" loading="lazy" /></a><figcaption>Page 96</figcaption></figure>
+          <figure><a href="gallery/2026/p97.jpg"><img src="gallery/2026/p97.jpg" alt="2026 Collection, page 97" loading="lazy" /></a><figcaption>Page 97</figcaption></figure>
+          <figure><a href="gallery/2026/p98.jpg"><img src="gallery/2026/p98.jpg" alt="2026 Collection, page 98" loading="lazy" /></a><figcaption>Page 98</figcaption></figure>
+          <figure><a href="gallery/2026/p99.jpg"><img src="gallery/2026/p99.jpg" alt="2026 Collection, page 99" loading="lazy" /></a><figcaption>Page 99</figcaption></figure>
+        </div>
+      </section>
+      <section class="gal-sec" id="2025">
+        <h2>2025 Collection</h2>
+        <p class="count">35 pages · Wreaths, arrangements and seasonal pieces from the 2025 catalog.</p>
+        <div class="grid">
+          <figure><a href="gallery/2025/p01.jpg"><img src="gallery/2025/p01.jpg" alt="2025 Collection, cover" loading="lazy" /></a><figcaption>Cover</figcaption></figure>
+          <figure><a href="gallery/2025/p02.jpg"><img src="gallery/2025/p02.jpg" alt="2025 Collection, page 2" loading="lazy" /></a><figcaption>Page 2</figcaption></figure>
+          <figure><a href="gallery/2025/p03.jpg"><img src="gallery/2025/p03.jpg" alt="2025 Collection, page 3" loading="lazy" /></a><figcaption>Page 3</figcaption></figure>
+          <figure><a href="gallery/2025/p04.jpg"><img src="gallery/2025/p04.jpg" alt="2025 Collection, page 4" loading="lazy" /></a><figcaption>Page 4</figcaption></figure>
+          <figure><a href="gallery/2025/p05.jpg"><img src="gallery/2025/p05.jpg" alt="2025 Collection, page 5" loading="lazy" /></a><figcaption>Page 5</figcaption></figure>
+          <figure><a href="gallery/2025/p06.jpg"><img src="gallery/2025/p06.jpg" alt="2025 Collection, page 6" loading="lazy" /></a><figcaption>Page 6</figcaption></figure>
+          <figure><a href="gallery/2025/p07.jpg"><img src="gallery/2025/p07.jpg" alt="2025 Collection, page 7" loading="lazy" /></a><figcaption>Page 7</figcaption></figure>
+          <figure><a href="gallery/2025/p08.jpg"><img src="gallery/2025/p08.jpg" alt="2025 Collection, page 8" loading="lazy" /></a><figcaption>Page 8</figcaption></figure>
+          <figure><a href="gallery/2025/p09.jpg"><img src="gallery/2025/p09.jpg" alt="2025 Collection, page 9" loading="lazy" /></a><figcaption>Page 9</figcaption></figure>
+          <figure><a href="gallery/2025/p10.jpg"><img src="gallery/2025/p10.jpg" alt="2025 Collection, page 10" loading="lazy" /></a><figcaption>Page 10</figcaption></figure>
+          <figure><a href="gallery/2025/p11.jpg"><img src="gallery/2025/p11.jpg" alt="2025 Collection, page 11" loading="lazy" /></a><figcaption>Page 11</figcaption></figure>
+          <figure><a href="gallery/2025/p12.jpg"><img src="gallery/2025/p12.jpg" alt="2025 Collection, page 12" loading="lazy" /></a><figcaption>Page 12</figcaption></figure>
+          <figure><a href="gallery/2025/p13.jpg"><img src="gallery/2025/p13.jpg" alt="2025 Collection, page 13" loading="lazy" /></a><figcaption>Page 13</figcaption></figure>
+          <figure><a href="gallery/2025/p14.jpg"><img src="gallery/2025/p14.jpg" alt="2025 Collection, page 14" loading="lazy" /></a><figcaption>Page 14</figcaption></figure>
+          <figure><a href="gallery/2025/p15.jpg"><img src="gallery/2025/p15.jpg" alt="2025 Collection, page 15" loading="lazy" /></a><figcaption>Page 15</figcaption></figure>
+          <figure><a href="gallery/2025/p16.jpg"><img src="gallery/2025/p16.jpg" alt="2025 Collection, page 16" loading="lazy" /></a><figcaption>Page 16</figcaption></figure>
+          <figure><a href="gallery/2025/p17.jpg"><img src="gallery/2025/p17.jpg" alt="2025 Collection, page 17" loading="lazy" /></a><figcaption>Page 17</figcaption></figure>
+          <figure><a href="gallery/2025/p18.jpg"><img src="gallery/2025/p18.jpg" alt="2025 Collection, page 18" loading="lazy" /></a><figcaption>Page 18</figcaption></figure>
+          <figure><a href="gallery/2025/p19.jpg"><img src="gallery/2025/p19.jpg" alt="2025 Collection, page 19" loading="lazy" /></a><figcaption>Page 19</figcaption></figure>
+          <figure><a href="gallery/2025/p20.jpg"><img src="gallery/2025/p20.jpg" alt="2025 Collection, page 20" loading="lazy" /></a><figcaption>Page 20</figcaption></figure>
+          <figure><a href="gallery/2025/p21.jpg"><img src="gallery/2025/p21.jpg" alt="2025 Collection, page 21" loading="lazy" /></a><figcaption>Page 21</figcaption></figure>
+          <figure><a href="gallery/2025/p22.jpg"><img src="gallery/2025/p22.jpg" alt="2025 Collection, page 22" loading="lazy" /></a><figcaption>Page 22</figcaption></figure>
+          <figure><a href="gallery/2025/p23.jpg"><img src="gallery/2025/p23.jpg" alt="2025 Collection, page 23" loading="lazy" /></a><figcaption>Page 23</figcaption></figure>
+          <figure><a href="gallery/2025/p24.jpg"><img src="gallery/2025/p24.jpg" alt="2025 Collection, page 24" loading="lazy" /></a><figcaption>Page 24</figcaption></figure>
+          <figure><a href="gallery/2025/p25.jpg"><img src="gallery/2025/p25.jpg" alt="2025 Collection, page 25" loading="lazy" /></a><figcaption>Page 25</figcaption></figure>
+          <figure><a href="gallery/2025/p26.jpg"><img src="gallery/2025/p26.jpg" alt="2025 Collection, page 26" loading="lazy" /></a><figcaption>Page 26</figcaption></figure>
+          <figure><a href="gallery/2025/p27.jpg"><img src="gallery/2025/p27.jpg" alt="2025 Collection, page 27" loading="lazy" /></a><figcaption>Page 27</figcaption></figure>
+          <figure><a href="gallery/2025/p28.jpg"><img src="gallery/2025/p28.jpg" alt="2025 Collection, page 28" loading="lazy" /></a><figcaption>Page 28</figcaption></figure>
+          <figure><a href="gallery/2025/p29.jpg"><img src="gallery/2025/p29.jpg" alt="2025 Collection, page 29" loading="lazy" /></a><figcaption>Page 29</figcaption></figure>
+          <figure><a href="gallery/2025/p30.jpg"><img src="gallery/2025/p30.jpg" alt="2025 Collection, page 30" loading="lazy" /></a><figcaption>Page 30</figcaption></figure>
+          <figure><a href="gallery/2025/p31.jpg"><img src="gallery/2025/p31.jpg" alt="2025 Collection, page 31" loading="lazy" /></a><figcaption>Page 31</figcaption></figure>
+          <figure><a href="gallery/2025/p32.jpg"><img src="gallery/2025/p32.jpg" alt="2025 Collection, page 32" loading="lazy" /></a><figcaption>Page 32</figcaption></figure>
+          <figure><a href="gallery/2025/p33.jpg"><img src="gallery/2025/p33.jpg" alt="2025 Collection, page 33" loading="lazy" /></a><figcaption>Page 33</figcaption></figure>
+          <figure><a href="gallery/2025/p34.jpg"><img src="gallery/2025/p34.jpg" alt="2025 Collection, page 34" loading="lazy" /></a><figcaption>Page 34</figcaption></figure>
+          <figure><a href="gallery/2025/p35.jpg"><img src="gallery/2025/p35.jpg" alt="2025 Collection, page 35" loading="lazy" /></a><figcaption>Page 35</figcaption></figure>
+        </div>
+      </section>
+      <section class="gal-sec" id="small">
+        <h2>Small Pieces</h2>
+        <p class="count">35 pages · Small-scale pieces, 6–16 inches — Item No. SSC series, sizes printed on each page.</p>
+        <div class="grid">
+          <figure><a href="gallery/small/p01.jpg"><img src="gallery/small/p01.jpg" alt="small Collection, page 1" loading="lazy" /></a><figcaption>Page 1</figcaption></figure>
+          <figure><a href="gallery/small/p02.jpg"><img src="gallery/small/p02.jpg" alt="small Collection, page 2" loading="lazy" /></a><figcaption>Page 2</figcaption></figure>
+          <figure><a href="gallery/small/p03.jpg"><img src="gallery/small/p03.jpg" alt="small Collection, page 3" loading="lazy" /></a><figcaption>Page 3</figcaption></figure>
+          <figure><a href="gallery/small/p04.jpg"><img src="gallery/small/p04.jpg" alt="small Collection, page 4" loading="lazy" /></a><figcaption>Page 4</figcaption></figure>
+          <figure><a href="gallery/small/p05.jpg"><img src="gallery/small/p05.jpg" alt="small Collection, page 5" loading="lazy" /></a><figcaption>Page 5</figcaption></figure>
+          <figure><a href="gallery/small/p06.jpg"><img src="gallery/small/p06.jpg" alt="small Collection, page 6" loading="lazy" /></a><figcaption>Page 6</figcaption></figure>
+          <figure><a href="gallery/small/p07.jpg"><img src="gallery/small/p07.jpg" alt="small Collection, page 7" loading="lazy" /></a><figcaption>Page 7</figcaption></figure>
+          <figure><a href="gallery/small/p08.jpg"><img src="gallery/small/p08.jpg" alt="small Collection, page 8" loading="lazy" /></a><figcaption>Page 8</figcaption></figure>
+          <figure><a href="gallery/small/p09.jpg"><img src="gallery/small/p09.jpg" alt="small Collection, page 9" loading="lazy" /></a><figcaption>Page 9</figcaption></figure>
+          <figure><a href="gallery/small/p10.jpg"><img src="gallery/small/p10.jpg" alt="small Collection, page 10" loading="lazy" /></a><figcaption>Page 10</figcaption></figure>
+          <figure><a href="gallery/small/p11.jpg"><img src="gallery/small/p11.jpg" alt="small Collection, page 11" loading="lazy" /></a><figcaption>Page 11</figcaption></figure>
+          <figure><a href="gallery/small/p12.jpg"><img src="gallery/small/p12.jpg" alt="small Collection, page 12" loading="lazy" /></a><figcaption>Page 12</figcaption></figure>
+          <figure><a href="gallery/small/p13.jpg"><img src="gallery/small/p13.jpg" alt="small Collection, page 13" loading="lazy" /></a><figcaption>Page 13</figcaption></figure>
+          <figure><a href="gallery/small/p14.jpg"><img src="gallery/small/p14.jpg" alt="small Collection, page 14" loading="lazy" /></a><figcaption>Page 14</figcaption></figure>
+          <figure><a href="gallery/small/p15.jpg"><img src="gallery/small/p15.jpg" alt="small Collection, page 15" loading="lazy" /></a><figcaption>Page 15</figcaption></figure>
+          <figure><a href="gallery/small/p16.jpg"><img src="gallery/small/p16.jpg" alt="small Collection, page 16" loading="lazy" /></a><figcaption>Page 16</figcaption></figure>
+          <figure><a href="gallery/small/p17.jpg"><img src="gallery/small/p17.jpg" alt="small Collection, page 17" loading="lazy" /></a><figcaption>Page 17</figcaption></figure>
+          <figure><a href="gallery/small/p18.jpg"><img src="gallery/small/p18.jpg" alt="small Collection, page 18" loading="lazy" /></a><figcaption>Page 18</figcaption></figure>
+          <figure><a href="gallery/small/p19.jpg"><img src="gallery/small/p19.jpg" alt="small Collection, page 19" loading="lazy" /></a><figcaption>Page 19</figcaption></figure>
+          <figure><a href="gallery/small/p20.jpg"><img src="gallery/small/p20.jpg" alt="small Collection, page 20" loading="lazy" /></a><figcaption>Page 20</figcaption></figure>
+          <figure><a href="gallery/small/p21.jpg"><img src="gallery/small/p21.jpg" alt="small Collection, page 21" loading="lazy" /></a><figcaption>Page 21</figcaption></figure>
+          <figure><a href="gallery/small/p22.jpg"><img src="gallery/small/p22.jpg" alt="small Collection, page 22" loading="lazy" /></a><figcaption>Page 22</figcaption></figure>
+          <figure><a href="gallery/small/p23.jpg"><img src="gallery/small/p23.jpg" alt="small Collection, page 23" loading="lazy" /></a><figcaption>Page 23</figcaption></figure>
+          <figure><a href="gallery/small/p24.jpg"><img src="gallery/small/p24.jpg" alt="small Collection, page 24" loading="lazy" /></a><figcaption>Page 24</figcaption></figure>
+          <figure><a href="gallery/small/p25.jpg"><img src="gallery/small/p25.jpg" alt="small Collection, page 25" loading="lazy" /></a><figcaption>Page 25</figcaption></figure>
+          <figure><a href="gallery/small/p26.jpg"><img src="gallery/small/p26.jpg" alt="small Collection, page 26" loading="lazy" /></a><figcaption>Page 26</figcaption></figure>
+          <figure><a href="gallery/small/p27.jpg"><img src="gallery/small/p27.jpg" alt="small Collection, page 27" loading="lazy" /></a><figcaption>Page 27</figcaption></figure>
+          <figure><a href="gallery/small/p28.jpg"><img src="gallery/small/p28.jpg" alt="small Collection, page 28" loading="lazy" /></a><figcaption>Page 28</figcaption></figure>
+          <figure><a href="gallery/small/p29.jpg"><img src="gallery/small/p29.jpg" alt="small Collection, page 29" loading="lazy" /></a><figcaption>Page 29</figcaption></figure>
+          <figure><a href="gallery/small/p30.jpg"><img src="gallery/small/p30.jpg" alt="small Collection, page 30" loading="lazy" /></a><figcaption>Page 30</figcaption></figure>
+          <figure><a href="gallery/small/p31.jpg"><img src="gallery/small/p31.jpg" alt="small Collection, page 31" loading="lazy" /></a><figcaption>Page 31</figcaption></figure>
+          <figure><a href="gallery/small/p32.jpg"><img src="gallery/small/p32.jpg" alt="small Collection, page 32" loading="lazy" /></a><figcaption>Page 32</figcaption></figure>
+          <figure><a href="gallery/small/p33.jpg"><img src="gallery/small/p33.jpg" alt="small Collection, page 33" loading="lazy" /></a><figcaption>Page 33</figcaption></figure>
+          <figure><a href="gallery/small/p34.jpg"><img src="gallery/small/p34.jpg" alt="small Collection, page 34" loading="lazy" /></a><figcaption>Page 34</figcaption></figure>
+          <figure><a href="gallery/small/p35.jpg"><img src="gallery/small/p35.jpg" alt="small Collection, page 35" loading="lazy" /></a><figcaption>Page 35</figcaption></figure>
+        </div>
+      </section>
+      <div class="gal-cta">
+        <a class="back" href="index.html">&larr; Back to home</a>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <div class="fname">EverBloom Studio</div>
+        <div>Preserved botanicals · Handcrafted leather · Ceramic mini vases · Cross-stitch embroidery · Vintage &amp; custom map prints</div>
+      </div>
+      <div>
+        © 2026 EverBloom Studio LLC · Brooklyn, NY<br />
+        <a href="mailto:info@everbloomstudio.us">info@everbloomstudio.us</a>
+      </div>
+    </footer>
+  </body>
+</html>
