@@ -3,9 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="color-scheme" content="light dark" />
     <meta name="description" content="EverBloom Studio — the full preserved botanicals collection: boxwood wreaths, arrangements and small pieces from our partner workshop in Liaoning, China." />
     <link rel="canonical" href="https://everbloomstudio.us/preserved-botanicals.html" />
@@ -15,6 +12,7 @@
     <meta property="og:description" content="Boxwood wreaths, arrangements and small pieces, made from real preserved botanicals. Photos from our partner workshop's catalogs." />
     <meta property="og:url" content="https://everbloomstudio.us/preserved-botanicals.html" />
     <meta property="og:image" content="https://everbloomstudio.us/assets/wreath.jpg" />
+    <link rel="icon" href="data:," />
     <title>Preserved Botanicals — Full Collection | EverBloom Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -224,6 +222,7 @@
         .facts { grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
         .nav-links a { padding: 0.45rem 0.5rem; font-size: 0.88rem; }
       }
+    
       .gal-hero { max-width: 1100px; margin: 0 auto; padding: 2.2rem 1.4rem 0.5rem; }
       .gal-hero h1 { font-family: "Cormorant Garamond", serif; font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.1; margin: 0.6rem 0 0.8rem; }
       .gal-hero p { color: var(--ink-soft); max-width: 62ch; }
@@ -237,6 +236,38 @@
       .grid img { width: 100%; height: 210px; object-fit: cover; object-position: top center; display: block; background: #fff; }
       .grid figcaption { padding: 0.55rem 0.8rem; font-size: 0.85rem; color: var(--ink-soft); }
       .gal-cta { max-width: 1100px; margin: 0 auto; padding: 2rem 1.4rem 3rem; }
+
+      /* ---------- Inquiry list ---------- */
+      .grid figure { position: relative; }
+      .grid figure.selected { outline: 2px solid var(--green); outline-offset: -2px; }
+      .grid figcaption { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; }
+      .inq-btn {
+        flex: none; border: 1.5px solid var(--green); background: transparent; color: var(--green);
+        border-radius: 999px; padding: 0.28rem 0.8rem; font-weight: 700; font-size: 0.82rem;
+        cursor: pointer; min-height: 2rem; line-height: 1.2; white-space: nowrap;
+      }
+      .inq-btn:hover { background: var(--bg-soft); }
+      .inq-btn[aria-pressed="true"] { background: var(--green); color: #f5f1e6; }
+      @media (prefers-color-scheme: dark) { .inq-btn[aria-pressed="true"] { color: #131a12; } }
+      .inq-bar {
+        position: fixed; left: 50%; transform: translateX(-50%);
+        bottom: max(1rem, env(safe-area-inset-bottom));
+        z-index: 40; display: none; align-items: center; gap: 0.7rem; flex-wrap: wrap; justify-content: center;
+        max-width: min(92vw, 680px); padding: 0.7rem 1rem;
+        background: var(--surface); border: 1px solid var(--line); border-radius: 999px;
+        box-shadow: var(--shadow); font-size: 0.95rem; font-weight: 600;
+      }
+      .inq-bar.show { display: flex; }
+      .inq-bar .send {
+        border: none; background: var(--green); color: #f5f1e6; border-radius: 999px;
+        padding: 0.55rem 1.2rem; font-weight: 700; font-size: 0.95rem; cursor: pointer; min-height: 2.5rem;
+      }
+      @media (prefers-color-scheme: dark) { .inq-bar .send { color: #131a12; } }
+      .inq-bar .copy, .inq-bar .clear {
+        border: 1.5px solid var(--line); background: transparent; color: var(--ink);
+        border-radius: 999px; padding: 0.5rem 1rem; font-weight: 700; font-size: 0.9rem; cursor: pointer; min-height: 2.5rem;
+      }
+      .inq-bar .clear { border-color: transparent; color: var(--ink-soft); }
     </style>
   </head>
   <body id="top">
@@ -265,8 +296,8 @@
         </p>
         <p>
           Prices, minimums and samples on request — wholesale inquiries are open.
-          Write to <a href="mailto:info@everbloomstudio.us">info@everbloomstudio.us</a>
-          with the item numbers you like.
+          Tap &ldquo;Add to inquiry&rdquo; under any page to build a shortlist, then send it
+          to us in one email.
         </p>
       </div>
       <section class="gal-sec" id="2026">
@@ -470,5 +501,115 @@
         <a href="mailto:info@everbloomstudio.us">info@everbloomstudio.us</a>
       </div>
     </footer>
+    <div class="inq-bar" id="inqBar" role="region" aria-label="Inquiry list">
+      <span class="count" id="inqCount">Inquiry list &middot; 0 items</span>
+      <button class="send" id="inqSend" type="button">Send inquiry</button>
+      <button class="copy" id="inqCopy" type="button">Copy list</button>
+      <button class="clear" id="inqClear" type="button">Clear</button>
+    </div>
+    <script>
+    (function () {
+      var EMAIL = "info@everbloomstudio.us";
+      var KEY = "everbloom-inquiry-v1";
+      var store = {};
+      try { store = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { store = {}; }
+      function save() { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {} }
+      function ids() { return Object.keys(store).sort(); }
+      function labelOf(fig) {
+        var sec = fig.closest("section");
+        var group = sec ? sec.querySelector("h2").textContent.trim() : "Preserved Botanicals";
+        var cap = fig.querySelector("figcaption");
+        var page = cap && cap.firstChild ? cap.firstChild.textContent.trim() : "";
+        return group + " \u2014 " + page;
+      }
+      function urlOf(fig) {
+        var a = fig.querySelector("a");
+        return a ? ("https://everbloomstudio.us/" + a.getAttribute("href")) : "";
+      }
+      var bar = document.getElementById("inqBar");
+      var countEl = document.getElementById("inqCount");
+      function render() {
+        var n = ids().length;
+        countEl.textContent = "Inquiry list \u00b7 " + n + (n === 1 ? " item" : " items");
+        bar.classList.toggle("show", n > 0);
+        document.querySelectorAll(".grid figure").forEach(function (fig) {
+          var a = fig.querySelector("a");
+          var id = a ? a.getAttribute("href") : "";
+          var btn = fig.querySelector(".inq-btn");
+          if (!btn) return;
+          var on = Object.prototype.hasOwnProperty.call(store, id);
+          btn.setAttribute("aria-pressed", on ? "true" : "false");
+          btn.textContent = on ? "\u2713 In inquiry list" : "+ Add to inquiry";
+          fig.classList.toggle("selected", on);
+        });
+      }
+      document.querySelectorAll(".grid figure").forEach(function (fig) {
+        var a = fig.querySelector("a");
+        var cap = fig.querySelector("figcaption");
+        if (!a || !cap) return;
+        var id = a.getAttribute("href");
+        var btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "inq-btn";
+        btn.addEventListener("click", function (ev) {
+          ev.preventDefault();
+          if (Object.prototype.hasOwnProperty.call(store, id)) { delete store[id]; }
+          else { store[id] = { label: labelOf(fig), url: urlOf(fig) }; }
+          save();
+          render();
+        });
+        cap.appendChild(btn);
+      });
+      function listText() {
+        return ids().map(function (id) {
+          var it = store[id];
+          return "- " + it.label + " \u2014 " + it.url;
+        }).join("\n");
+      }
+      function copyText(text, done) {
+        function fallback() {
+          var ta = document.createElement("textarea");
+          ta.value = text;
+          ta.style.position = "fixed"; ta.style.opacity = "0";
+          document.body.appendChild(ta);
+          ta.select();
+          try { document.execCommand("copy"); } catch (e) {}
+          document.body.removeChild(ta);
+          done();
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, fallback);
+        } else { fallback(); }
+      }
+      document.getElementById("inqSend").addEventListener("click", function () {
+        var n = ids().length;
+        if (!n) return;
+        var subject = "Wholesale inquiry \u2014 Preserved Botanicals (" + n + (n === 1 ? " item)" : " items)");
+        var body = "Hello EverBloom Studio,\n\nI would like wholesale pricing, minimum order quantities and sample terms for these items from your Preserved Botanicals collection:\n\n" + listText() + "\n\nName:\nCompany:\nCity / State:\n";
+        var href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        if (href.length > 2000) {
+          copyText(body, function () {
+            alert("Your list is long, so it has been copied. Please paste it into an email to " + EMAIL + ".");
+          });
+        } else {
+          window.location.href = href;
+        }
+      });
+      document.getElementById("inqCopy").addEventListener("click", function () {
+        var btn = document.getElementById("inqCopy");
+        copyText(listText(), function () {
+          var old = btn.textContent;
+          btn.textContent = "Copied \u2713";
+          setTimeout(function () { btn.textContent = old; }, 1600);
+        });
+      });
+      document.getElementById("inqClear").addEventListener("click", function () {
+        store = {};
+        save();
+        render();
+      });
+      render();
+    })();
+    </script>
   </body>
 </html>
